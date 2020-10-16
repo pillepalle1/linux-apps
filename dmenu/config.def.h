@@ -13,8 +13,9 @@ static const char *colors[SchemeLast][2] = {
 	[SchemeSel] = { "#eeeeee", "#005577" },
 	[SchemeOut] = { "#000000", "#00ffff" },
 };
-/* -l option; if nonzero, dmenu uses vertical list with given number of lines */
-static unsigned int lines      = 0;
+
+static unsigned int lines      = 0;			/* -l option; controls number of lines in grid if > 0 */
+static unsigned int columns    = 0;			/* -g option; controls number of columns in grid if > 0 */
 static unsigned int lineheight = 0;         /* -h option; minimum height of a menu line     */
 
 /*
